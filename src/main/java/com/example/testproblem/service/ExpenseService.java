@@ -15,6 +15,18 @@ public class ExpenseService {
     private Map<String, List<Expense>> resultMap;
     private double sum;
 
+    public List<Expense> getExpenseList() {
+        return expenseList;
+    }
+
+    public Map<String, List<Expense>> getResultMap() {
+        return resultMap;
+    }
+
+    public double getSum() {
+        return sum;
+    }
+
     public Map<String,List<Expense>> getAllExpensesList(){
         return resultMap;
     }

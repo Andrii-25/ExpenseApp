@@ -12,6 +12,14 @@ public class Expense implements Comparable<Expense> {
     private String product;
     private String date;
 
+    public Expense(double amount, String currency, String product, String date) {
+        this.id = idInc++;
+        this.amount = amount;
+        this.currency = currency;
+        this.product = product;
+        this.date = date;
+    }
+
     public Expense() {
         this.id = idInc++;
     }
